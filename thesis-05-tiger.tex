@@ -1,0 +1,73 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+
+\title{
+	{\Huge{\bfseries Thesis Title}}\\
+	{\large Institution Name}
+}
+\author{John Doe}
+\date{
+\vspace{1cm}
+{\includegraphics[height=0.2\textheight,keepaspectratio]{university.png}}
+}
+
+\pdfinfo{
+   /Author (John Doe)
+   /Title  (Creating a PDF document using PDFLaTeX)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+\begin{document}
+\maketitle
+
+\chapter*{Abstract}
+Abstract goes here
+
+\chapter*{Dedication}
+To mum and dad
+
+\chapter*{Declaration}
+I declare that..
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\tableofcontents
+
+\chapter{First Chapter}
+%\input{chapters/introduction}
+\section{My Section}
+\subsection{My Subsection}
+\input{lorem.tex}
+\subsection{My Subsection}
+\input{lorem.tex}
+\subsection{My Subsection}
+\input{lorem.tex}
+\input{lorem.tex}
+\input{lorem.tex}
+
+
+\chapter{Chapter Two Title}
+%\input{chapters/chapter02}
+
+\chapter{Chapter Three Title}
+%\input{chapters/chapter03}
+
+\chapter{Chapter Four Title}
+%\input{chapters/chapter04}
+
+\chapter{Conclusion}
+%\input{chapters/conclusion}
+
+\appendix
+\chapter{Appendix Title}
+%\input{chapters/appendix}
+
+\end{document}
+
+

@@ -1,0 +1,56 @@
+
+
+\documentclass{book}
+\usepackage{xcolor}
+\usepackage[explicit]{titlesec}
+
+\definecolor{mybluei}{RGB}{0,173,239}
+\definecolor{myblueii}{RGB}{63,200,244}
+\definecolor{myblueiii}{RGB}{199,234,253}
+
+\title{My PhD Thesis}
+\author{John Doe}
+
+\pdfinfo{
+   /Author (John Doe)
+   /Title  (Creating a PDF document using PDFLaTeX)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+
+% chapter tiltes formatting
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\bfseries\LARGE}
+  {\renewcommand{\thechapter}{\Roman{chapter}}\hspace*{0.5em}\colorbox{myblueii}{%
+    \parbox[c][1.2cm][c]{1cm}{%
+      \centering\textcolor{white}  {\Huge{\thechapter}}}}}
+  {+1.5ex}
+  {\titlerule\vspace{.7ex}\filleft\MakeUppercase{#1}}
+  [\vspace{.2ex}\titlerule]
+% chapter tiltes spacing
+
+%\titlespacing*{\chapter}{0pt}{50pt}{80pt}
+
+\begin{document}
+
+%\maketitle
+%\tableofcontents
+
+\chapter{From the Ground Up!}
+\section{My Section}
+\subsection{My Subsection}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque erat quis enim semper convallis. Praesent urna est, feugiat vitae dictum ut, faucibus id nisi. Proin pharetra nibh vel felis facilisis tempus. Donec posuere neque nec malesuada aliquam. Praesent non lacinia orci, id maximus augue. Quisque lacus lorem, lacinia at augue et, ornare tincidunt ipsum. Nulla sit amet velit enim. Mauris tincidunt pellentesque lorem quis malesuada. Aliquam nunc nisi, ullamcorper ac libero vel, ullamcorper vestibulum diam. Nulla pretium iaculis libero, scelerisque faucibus lectus dapibus sit amet.
+
+Sed aliquam est eget elementum volutpat. Sed ut lacinia ligula. Nulla sit amet suscipit purus. Suspendisse fermentum, arcu eu sodales sagittis, dui nulla finibus metus, vel rhoncus urna dolor ac ligula. Pellentesque aliquet mauris eu mauris commodo vestibulum. Phasellus facilisis turpis sit amet nulla maximus consectetur. Quisque feugiat volutpat placerat. Phasellus suscipit velit accumsan, ornare massa ac, suscipit diam.
+
+Nam nulla purus, imperdiet nec leo in, tempor malesuada orci. Fusce quis viverra ligula, sed semper urna. Fusce vitae imperdiet nisi. Vestibulum ornare lorem a pellentesque rhoncus. Aenean ullamcorper augue a lacus cursus feugiat. Integer at mauris tincidunt, pulvinar velit at, imperdiet tortor. Etiam et lacinia turpis. Nulla in dui aliquam, sodales ante a, ultrices felis. Vivamus ipsum nulla, sagittis at nisl nec, vehicula imperdiet odio. Sed porttitor nibh in elit mattis gravida. Donec vehicula maximus lectus, sed commodo urna commodo eget.
+
+Phasellus rutrum mi non lacus dictum, ac eleifend urna dictum. Mauris sit amet dolor quis neque vulputate molestie id ut nunc. Nullam aliquet ante vitae volutpat luctus. Duis porta vehicula nibh et rutrum. Fusce maximus leo varius consequat cursus. Nunc id sagittis felis, a dictum felis. Sed semper vitae diam id fringilla. Nullam rutrum quam nunc, et facilisis dui aliquet sit amet. Nam et varius nibh, quis viverra turpis. Aliquam non lacus tempus sem tempus rutrum non ut massa. Donec mattis fermentum arcu ac eleifend. Nulla egestas nisi sit amet gravida facilisis.
+
+Nulla ut risus ornare, congue enim a, pulvinar turpis. Nam faucibus mi eu porta facilisis. Phasellus eu venenatis velit. Aliquam erat volutpat. Nam sollicitudin a turpis sit amet lacinia. Aenean commodo neque libero, vel elementum lectus rhoncus at. Fusce lobortis sagittis ipsum vitae pretium. Curabitur ut turpis in nisl vehicula dictum. Donec ut odio arcu. Nullam finibus dolor in maximus consequat. Aliquam in tortor id sem iaculis ornare quis ut risus. Phasellus in lorem et orci maximus aliquam at vel ante.
+
+
+\end{document}
