@@ -1,0 +1,50 @@
+
+\documentclass{report}
+\title{{\Large\bfseries My Ph.D. Thesis Title}}
+\author{John Doe}
+\date{}
+
+\begin{document} 
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+\section{Objectives}
+More text
+Text hello hello
+Hello
+this is a first example of ref. \cite{Testref98}.
+this is a second example of ref. \cite{Testref98,lamport94}.
+this is another example of ref. \cite{lamport94}.
+this is another example of ref. \cite{lamport94}.
+
+\section{Description}
+More text
+More text
+More text
+
+\chapter{Second Chapter}
+\section{Theory}
+Text hello hello
+More text
+Text hello hello
+Text hello hello
+Text hello hello
+More text
+More text
+More text
+
+
+\addcontentsline{toc}{chapter}{Bibliography} %add biblio to toc
+\begin{thebibliography}{99}
+\bibitem{Testref98} test reference
+\bibitem{lamport94}
+  Leslie Lamport,
+  \textit{\LaTeX: a document preparation system},
+  Addison Wesley, Massachusetts,
+  2nd edition,
+  1994.
+\end{thebibliography}
+
+
+\end{document}
