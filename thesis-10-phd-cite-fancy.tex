@@ -1,0 +1,117 @@
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Bjornstrup]{fncychap}
+
+\usepackage{titlesec, color}
+\definecolor{gray75}{gray}{0.75}
+
+\newcommand{\hsp}{\hspace{20pt}}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\title{
+	{\Huge{\bfseries Thesis Title}}\\
+	{\large Institution Name}
+}
+\author{John Doe}
+\date{
+\vspace{1cm}
+{\includegraphics[height=0.2\textheight,keepaspectratio]{university.png}}
+}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhf{}
+\fancyhead[RE]{\chaptername~\thechapter}
+\fancyhead[LO]{\leftmark}
+\fancyhead[LE,RO]{\thepage}
+
+
+
+
+\pdfinfo{
+   /Author (John Doe)
+   /Title  (Creating a PDF document using PDFLaTeX)
+   /CreationDate (D:2017)
+   /Subject (PDFLaTeX)
+   /Keywords (PDF;LaTeX)
+}
+
+\begin{document}
+\maketitle
+
+\chapter*{Abstract}
+Abstract goes here
+
+\chapter*{Dedication}
+To mum and dad
+
+\chapter*{Declaration}
+I declare that..
+
+\chapter*{Acknowledgements}
+I want to thank...
+
+\tableofcontents
+
+\chapter{First Chapter}
+%\input{chapters/introduction}
+\section{My Section}
+\subsection{My Subsection}
+\input{lorem.tex}
+\subsection{My Subsection}
+\input{lorem.tex}
+\subsection{My Subsection}
+\input{lorem.tex}
+\input{lorem.tex}
+\input{lorem.tex}
+this is a first example of ref. \cite{Testref98}.
+this is a second example of ref. \cite{Testref98,lamport94}.
+this is another example of ref. \cite{lamport94}.
+this is another example of ref. \cite{lamport94}.
+
+
+\chapter{Chapter Two Title}
+%\input{chapters/chapter02}
+\input{lorem.tex}
+\input{lorem.tex}
+\input{lorem.tex}
+this is a first example of ref. \cite{Testref98}.
+this is a second example of ref. \cite{Testref98,lamport94}.
+this is another example of ref. \cite{lamport94}.
+this is another example of ref. \cite{lamport94}.
+
+\chapter{Chapter Three Title}
+%\input{chapters/chapter03}
+
+\chapter{Chapter Four Title}
+%\input{chapters/chapter04}
+
+\chapter{Conclusion}
+%\input{chapters/conclusion}
+
+\appendix
+\chapter{Appendix Title}
+%\input{chapters/appendix}
+
+
+
+\begin{thebibliography}{99}
+\bibitem{Testref98} test reference
+\bibitem{lamport94}
+  Leslie Lamport,
+  \textit{\LaTeX: a document preparation system},
+  Addison Wesley, Massachusetts,
+  2nd edition,
+  1994.
+\end{thebibliography}
+
+
+
+\end{document}
